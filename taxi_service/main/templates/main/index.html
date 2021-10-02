@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %} 
+{% block title %} Главная {%endblock%}
+{% block main %} 
+    <h1>Главная</h1>
+    <div class='container'>
+        <div class='row'>
+            {% for driver in drivers %}
+            <div class='col-3 m-4 p-3'>
+                    <h5>{{driver.id}}: {{driver.name}} {{driver.surname}}</h5>
+                    <p>Водитель с {{driver.rating}}-м уровнем рейтингом</p>
+                    {% with driver.photos.all as photos %}
+                    {% for photo in photos %}
+                    <img class='img-fluid rounded ' src='{{photo.url}}'>
+                    {% endfor %}
+                    {% endwith %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
