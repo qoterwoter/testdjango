@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-mhww!c_1nn#+%zaun4n%h&uxw^uga=s%sbm@09x=k09m$v&t^n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://testtest.std-962.ist.mospolytech.ru/']
+ALLOWED_HOSTS = ['http://testtest.std-962.ist.mospolytech.ru/','testtest.std-962.ist.mospolytech.ru'']
 
 
 IMPORT_EXPORT_USE_TRANSACTIONS = True
